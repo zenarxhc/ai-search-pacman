@@ -1,18 +1,18 @@
-# ai-search-pacman
+# AI Search Pacman (UC Berkeley)
 
-This project is based on the UC Berkeley Pacman AI framework.
+This repository contains my implementations for classical AI search algorithms and heuristics
+using the **UC Berkeley Pacman AI** framework.
 
-My contribution includes:
-- Implementation of classical search algorithms (DFS, BFS, UCS, A*)
-- Design of admissible and consistent heuristics
-- Optimization using MST-based heuristic caching
-- State-space modeling for complex search problems
+## What I implemented
+- Search algorithms: **DFS**, **BFS**, **Uniform Cost Search (UCS)**, **A\***
+- Heuristic design for grid-based search problems
+- **MST-based heuristic caching** for improved performance (where applicable)
 
-Technologies:
-- Python
-- Graph search algorithms
-- Heuristic design
-- AI problem solving
+## How to run
+> The UC Berkeley framework runs from the terminal inside the project folder.
 
-Original framework:
-http://ai.berkeley.edu
+### Example commands
+```bash
+python pacman.py -l tinyMaze -p SearchAgent -a fn=bfs
+python pacman.py -l mediumMaze -p SearchAgent -a fn=ucs
+python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic
